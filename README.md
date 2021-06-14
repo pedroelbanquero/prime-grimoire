@@ -66,6 +66,7 @@ map nsif $ sp (2^512) 1000
 n^2-distance^2, the distance is the field, who defines many numbers inside who can be solved with the same field
 
 377-5 = 373 , is prime
+
 377-40 = 337 , is prime
 
 The result using the square as a exponent of dif mod N is the inverse of the module .
@@ -93,6 +94,7 @@ Not all primes have common factors with N, the function can return a decrypted m
 
 
 ```Haskell
+
 prim n = read ((splitOn " " $ show (P.nextPrime n)) !! 1)::Integer
 
 sp s l = nub $ sort $  concat $ map (\x-> map (\y-> x*y) (map (\e-> prim (e*2) ) [(s)..(s)+l]) ) (map (\t-> prim (t*3)) [0,(s)..(s)+l])
