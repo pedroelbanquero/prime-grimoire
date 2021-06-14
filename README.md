@@ -26,7 +26,7 @@ powMod M e N = MC
 
 NDIFF = N-precPrime
 
-powMod MC (modular_inverse e ((precPrime^2-NDIFF^2)) (N) = message decrypted | common factor with carmichael | common factors with N
+powMod NDIFF (modular_inverse e ((precPrime^2-NDIFF^2)) (N) = message decrypted | common factor with carmichael | common factors with N
 
 
 # Testing with random big prime numbers
