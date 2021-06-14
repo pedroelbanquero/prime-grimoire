@@ -1,6 +1,14 @@
 # prime-grimoire
+
 a final description of NSIF field, code, ande demo
 
+The NSI field are the distances form N to previous primes in order of precPrime^2-F^2 defines the expansion of carmichael ,
+
+LCM (p1-1) (p2-1) 
+
+The camichael expansion of N allways cross N distance of a prime squares, allowing us to calculate derivated composite numbers with factors of N or his carmichael.
+
+Carmciahel of N^2-N ever is composed by origianl carmichael factors + N factors .
 
 # Math demonstration
 
