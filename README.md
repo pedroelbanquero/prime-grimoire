@@ -4,7 +4,7 @@ a final description of NSIF field, code, ande demo
 
 # Math demonstration
 
-As all numbers x^2-x alwais contain x and p^2-p allways is his (carmichael / totient / decimal expansion length) we can assume of a prime square can contain the factors of N.
+As all numbers x^2-x alwais contain x and p^2-p allways is his (carmichael / totient / decimal expansion length) we can assume a prime square can contain the factors of N at the distance of N from the prime square.
 
 Using rsa to check de decimal expansion length for a message M = 2
 
