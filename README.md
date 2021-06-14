@@ -39,7 +39,7 @@ powMod NDIFF (modular_inverse e ((precPrime^2-NDIFF^2)) (N) = message decrypted 
 
 # Testing with random big prime numbers
 
-NSF_FACTORS N = filter (\x-> x/=1 && x/=2) $ map (\x-> gcd (n) (tryperiod2 ((n)) ((n)^2-x^2) x)) $ [2^512..2^512+5000]
+NSIF_FACTORS N = filter (\x-> x/=1 && x/=2) $ map (\x-> gcd (n) (tryperiod2 ((n)) ((n)^2-x^2) x)) $ [2^512..2^512+5000]
 
 ```Haskell
 
