@@ -46,6 +46,12 @@ If D is made of the factors of the message the result contain factors of message
 
 As any prime in his square resting squared NDIFF (N2^2-NDIFF^2) contain factors of N we can derivate numbers with comon factors from N or his decimal expansion length.
 
+When the message M is the rest until a prime^2 less than N, we can know the key D who decrypt the message .
+
+When decrypts the result of the powMod is 0 if you rest the M value to the result .
+
+When not decrypts the result common factors are exposed if your res M to the result .
+
 
 # Testing with random big prime numbers
 
