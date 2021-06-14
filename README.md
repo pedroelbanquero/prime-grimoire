@@ -65,7 +65,7 @@ map nsif $ sp (2^512) 1000
 
 n^2-distance^2, the distance is the field, who defines many numbers inside who can be solved with the same field
 
-377-10 = 367 , is prime
+377-5 = 373 , is prime
 377-40 = 337 , is prime
 
 The result using the square as a exponent of dif mod N is the inverse of the module .
@@ -79,8 +79,16 @@ we can extract the factors by this way with GCD function.
 13
 
 
+*Main> gcd (377) $ (powMod 5 (modular_inverse 65537 (377^2-5^2)) 377) - 5
+
+13
+
+
 
 ```
+
+Not all primes have common factors with N, the function can return a decrypted message, a comon factors with N or common factors with carmichael / totient / decimal expansion length.
+
 
 
 
