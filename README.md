@@ -12,7 +12,7 @@ Carmciahel of N^2-N ever is composed by origianl carmichael factors + N factors 
 
 # Math demonstration
 
-As all numbers x^2-y always contain y and p^2-p allways is his (carmichael / totient / decimal expansion length) we can assume a prime square can contain the factors of N at the distance of N from the prime square.
+As all numbers X^2-Y^2 allways contains Y and P^2-P allways is his (carmichael / totient / decimal expansion length) we can assume a prime square can contain the factors of N at the distance of N from the prime square.
 
 Using rsa to check de decimal expansion length for a message M = 2
 
