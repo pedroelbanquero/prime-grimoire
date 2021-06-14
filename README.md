@@ -1,4 +1,4 @@
-# Prime-grimoire : the rise of factors
+# Prime-grimoire 
 
 a final description of NSIF field, code, ande demo
 
