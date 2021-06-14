@@ -52,6 +52,7 @@ When decrypts the result of the powMod is 0 if you rest the M value to the resul
 
 When not decrypts the result common factors are exposed if your res M to the result .
 
+When a combination of primes have the same expansion length factors the message can be decrypted with different factors D
 
 # Testing with random big prime numbers
 
