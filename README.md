@@ -89,7 +89,7 @@ we can extract the factors by this way with GCD function.
 
 Not all primes have common factors with N, the function can return a decrypted message, a comon factors with N or common factors with carmichael / totient / decimal expansion length.
 
-# SIMPLE ALGORITHM FOR 1024 BITS
+# SIMPLE ALGORITHM FOR N BITS
 
 prim n = read ((splitOn " " $ show (P.nextPrime n)) !! 1)::Integer
 
