@@ -22,6 +22,8 @@ N = public key
 
 D = private key
 
+preCprime = previous prime of N, and previous of this prime in a loop
+
 powMod (M) e N = MC (Message cyphered)
 
 powMod (MC) (modular_inverse e D) N = M
