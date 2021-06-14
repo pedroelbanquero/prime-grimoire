@@ -91,11 +91,16 @@ Not all primes have common factors with N, the function can return a decrypted m
 
 # SIMPLE ALGORITHM FOR N BITS
 
+
+```Haskell
 prim n = read ((splitOn " " $ show (P.nextPrime n)) !! 1)::Integer
 
 sp s l = nub $ sort $  concat $ map (\x-> map (\y-> x*y) (map (\e-> prim (e*2) ) [(s)..(s)+l]) ) (map (\t-> prim (t*3)) [0,(s)..(s)+l])
 
 nsif n = filter (\x-> x/=1 && x/=2) $ map (\x-> gcd (n) (powMod x )modular_inverse 65537 ((n)^2-x^2)) n) - x) $ [2^1024..2^1024+5000]
+
+```
+
 
 ![image](https://user-images.githubusercontent.com/60758685/121838997-afb97c80-cc9e-11eb-90c1-db7a1c90a735.png)
 
