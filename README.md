@@ -38,6 +38,14 @@ NDIFF = N-precPrime
 
 powMod NDIFF (modular_inverse e ((precPrime^2-NDIFF^2)) (N) = message decrypted | common factor with carmichael | common factors with N
 
+This happends because any nummber per himself resting the squared distance to N contain the factors of N
+
+When common factors appears in the inverse exponent you can obtain comon factors of N in the result. The reason because you can encrypt or decrypt.
+
+If D is made of the factors of the message the result contain factors of message and factors of N
+
+As any prime in his square resting squared NDIFF (N2^2-NDIFF^2) contain factors of N we can derivate numbers with comon factors from N or his decimal expansion length.
+
 
 # Testing with random big prime numbers
 
