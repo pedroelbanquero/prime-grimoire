@@ -1,6 +1,6 @@
 # Prime Grimoire  - The NSIF RSA Attack
 
-a final description of NSIF field, code, ande demo
+a final description of NSIF field, code, and demo
 
 The NSI field are the distances form N to previous primes in order of precPrime^2-F^2 defines the expansion of carmichael ,
 
