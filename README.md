@@ -135,5 +135,6 @@ DONATIONS
 
 12phYWJ5WiGW488ETj4PA8zjF7pCdC5ZWD
 
-All commercial rights are reserved . 
+All commercial rights of this document or derivates, are reserved .
+
 
