@@ -155,9 +155,7 @@ nsif n = filter (\x-> x/=1 && x/=2) $ map (\x-> gcd (n) (powMod x (modular_inver
 
 # LICENSE
 
-All pirate activities derivated have granted right to use and distribution. 
-
-Institutional investigation of this paper are forbidden
+Institutional investigation of this paper is forbidden
 
 All commercial rights of this document or derivates, are reserved .
 
