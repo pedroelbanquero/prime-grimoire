@@ -8,7 +8,7 @@ LCM (p1-1) (p2-1)
 
 The camichael expansion of N allways cross N distance of a prime squares, allowing us to calculate derivated composite numbers with factors of N or his carmichael.
 
-Carmciahel of N^2-N ever is composed by origianl carmichael factors + N factors .
+Carmciahel of N^2-N ever is composed by original carmichael factors + N factors .
 
 # Math demonstration
 
