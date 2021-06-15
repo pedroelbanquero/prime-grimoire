@@ -105,6 +105,8 @@ we can extract the factors by this way with GCD function.
 
 ```
 
+Implementation for education and investigation :)
+
 https://github.com/Ganapati/RsaCtfTool/pull/266
 
 
