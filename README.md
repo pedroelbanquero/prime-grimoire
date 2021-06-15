@@ -156,7 +156,7 @@ nsif n = filter (\x-> x/=1 && x/=2) $ map (\x-> gcd (n) (powMod x (modular_inver
 
 # LICENSE
 
-100 % Pure dark math of Mas de pascualeet
+100 % Pure dark math of Mas de Pascualet
 
 Institutional investigation of this paper is forbidden
 
