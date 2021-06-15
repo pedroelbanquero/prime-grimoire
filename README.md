@@ -1,4 +1,4 @@
-# Prime-grimoire 
+# Prime Grimoire  - The NSIF RSA Attack
 
 a final description of NSIF field, code, ande demo
 
