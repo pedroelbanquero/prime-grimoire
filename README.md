@@ -39,7 +39,7 @@ powMod M e N = MC
 
 NDIFF = N-precPrime
 
-powMod NDIFF (modular_inverse e ((precPrime^2-NDIFF^2)) (N) = message decrypted | common factor with carmichael | common factors with N
+powMod NDIFF (modular_inverse e ((N^2-NDIFF^2)) (N) = message decrypted | common factor with carmichael | common factors with N
 
 This happends because any nummber per himself resting the squared distance to N contain the factors of N
 
