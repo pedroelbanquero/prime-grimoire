@@ -10,6 +10,11 @@ The camichael expansion of N allways cross N distance of a prime squares, allowi
 
 Carmciahel of N^2-N ever is composed by original carmichael factors + N factors .
 
+
+![image](https://user-images.githubusercontent.com/60758685/122001914-a996cf00-cd76-11eb-8e0a-02b8f9be0990.png)
+
+
+
 # Math demonstration
 
 As all numbers X^2-Y^2 allways contains Y and P^2-P allways is his (carmichael / totient / decimal expansion length) we can assume a prime square can contain the factors of N at the distance of N from the prime square.
