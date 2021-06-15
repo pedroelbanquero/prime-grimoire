@@ -148,9 +148,12 @@ nsif n = filter (\x-> x/=1 && x/=2) $ map (\x-> gcd (n) (powMod x (modular_inver
 ![image](https://user-images.githubusercontent.com/60758685/121838997-afb97c80-cc9e-11eb-90c1-db7a1c90a735.png)
 
 
-DONATIONS
+# DONATIONS BTC
 
 12phYWJ5WiGW488ETj4PA8zjF7pCdC5ZWD
+
+
+# LICENSE
 
 All commercial rights of this document or derivates, are reserved .
 
