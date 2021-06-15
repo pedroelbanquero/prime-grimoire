@@ -2,7 +2,7 @@
 
 a final description of NSIF field, code, and demo
 
-The NSI field are the distances form N to previous primes in order of precPrime^2-F^2 defines the expansion of carmichael ,
+The NSI field are the distances form N to previous primes in order of N^2-F^2 defines the expansion of carmichael ,
 
 LCM (p1-1) (p2-1) 
 
