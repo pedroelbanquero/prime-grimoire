@@ -2,7 +2,7 @@
 
 a final description of NSIF field, code, and demo
 
-The NSI field are the distances from N to previous primes in order of N^2-F^2 defines the expansion of carmichael , the field is the distance to the smaller than N primes, who in rsa function returns a common factor number, or common factors with carmichael . As a concecuence carmichael expansion follows this P^2-P. and near this , cross in common the N expansion, because the numer is made of P^2-N 
+The NSI field are the distances from N to previous primes in order of N^2-F^2 defines the expansion of carmichael , the field is the distance to the smaller than N primes, who in rsa function returns a common factor number, or common factors with carmichael of N . As a concecuence carmichael expansion follows this P^2-P. and near this , cross in common the N expansion, because the numer is made of P^2-N 
 
 
 LCM (p1-1) (p2-1) 
