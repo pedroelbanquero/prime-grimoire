@@ -96,7 +96,7 @@ map nsif $ sp (2^512) 1000
 
 ![image](https://user-images.githubusercontent.com/60758685/121837222-acbc8d00-cc9a-11eb-858f-78f9ccd2fed2.png)
 
-40 and 10 ar distances to primes under 377, the distance^2 to the prime under N , contain N if you rest N.
+40 and 5 ar distances to primes under 377, the distance^2 to the prime under N , contain N if you rest N.
 
 n^2-distance^2, the distance is the field, who defines many numbers inside who can be solved with the same field
 
