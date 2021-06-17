@@ -57,7 +57,7 @@ When not decrypts the result are common factors are exposed if your rest M to th
 
 When a combination of primes have the same expansion length factors the message can be decrypted with different factors D
 
-# Testing with random big prime numbers
+# Testing with near powers big prime numbers
 
 NSIF_FACTORS N = filter (\x-> x/=1 && x/=2) $ map (\x-> gcd (n) (tryperiod2 ((n)) ((n)^2-x^2) x)) $ [2^512..2^512+5000]
 
@@ -89,6 +89,34 @@ map nsif $ sp (2^512) 1000
 ```
 
 ![image](https://user-images.githubusercontent.com/60758685/122001914-a996cf00-cd76-11eb-8e0a-02b8f9be0990.png)
+
+
+same with 2048
+
+![image](https://user-images.githubusercontent.com/60758685/122141520-211a3c00-ce13-11eb-9ba5-322caf6a0d3b.png)
+
+
+eliptic curve vs nsif method
+
+![image](https://user-images.githubusercontent.com/60758685/122146588-fa610300-ce1c-11eb-9896-65cdf15761cc.png)
+
+imposible factorize with ecm the big numbers
+
+
+when works ?
+
+![image](https://user-images.githubusercontent.com/60758685/122174753-96543400-ce48-11eb-8e3a-4421f2eac008.png)
+
+for now works when a prime who composes N have fixed number of bits or is near a power to have results in seconds or when the result of the product of primes carmichael cross N square - field^2
+
+long distances from squares
+
+![image](https://user-images.githubusercontent.com/60758685/122319581-65c2d780-cee6-11eb-9a7e-632bb804ba44.png)
+
+
+other geometric fields
+
+![image](https://user-images.githubusercontent.com/60758685/122329378-f0abce00-cef6-11eb-8c36-30eb73e96c49.png)
 
 
 
@@ -147,6 +175,8 @@ nsif n = filter (\x-> x/=1 && x/=2) $ map (\x-> gcd (n) (powMod x (modular_inver
 
 
 ![image](https://user-images.githubusercontent.com/60758685/121838997-afb97c80-cc9e-11eb-90c1-db7a1c90a735.png)
+
+
 
 
 # DONATIONS BTC
