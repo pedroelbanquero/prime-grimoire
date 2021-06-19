@@ -1,4 +1,4 @@
-# Prime Grimoire  - The NSIF RSA Attack
+# NSIF RSA Attack - Prime grimorie vol 3
 
 a final description of NSIF field, code, and demo
 
@@ -11,6 +11,9 @@ The camichael expansion of N allways cross N distance of a prime squares, allowi
 
 Carmciahel of N^2-N ever is composed by original carmichael factors + N factors .
 
+mod (b^e) N = common factors (carmichael N) + b OR common factors N + b OR mc
+
+gcd (N) (mod (mc - b)^(N^2-mc^2) N ) = Probable Tribial factor of N (otherwise from carmichael N)
 
 
 # Math demonstration
