@@ -13,7 +13,7 @@ Carmciahel of N^2-N ever is composed by original carmichael factors + N factors 
 
 mod (b^e) N = common factors (carmichael N) + b OR common factors N + b OR mc
 
-derivated inverse modular = (N^2-mc^2)
+derivated inverse modular = modular_inverse e (N^2-mc^2)
 
 gcd (N) ( (mod (mc - b)^(modular_inverse (bigprime) N^2-mc^2) N) - mc ) = Probable factor of N (otherwise from carmichael N)
 
