@@ -11,11 +11,11 @@ The camichael expansion of N allways cross N distance of a prime squares, allowi
 
 Carmciahel of N^2-N ever is composed by original carmichael factors + N factors .
 
-mod (b^e) N = common factors (carmichael N) + b OR common factors N + b OR mc
+generator = carmichael divisors or modular inverses
 
-derivated inverse modular = modular_inverse e (N^e-mc^e)
+powMod generator (modular_inverse 1928379187239812173 (N^2-generator^2)) N) - generator = probable factor of N or decrypt (==0)
 
-gcd (N) ( (mod (mc - b)^(modular_inverse (bigprime) N^e-mc^e) N) - mc ) = Probable factor of N (otherwise from carmichael N)
+![image](https://user-images.githubusercontent.com/60758685/122687991-2eeb0b00-d1df-11eb-8a3d-c5577c16928f.png)
 
 
 # Math demonstration
