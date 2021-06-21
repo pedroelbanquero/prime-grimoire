@@ -66,15 +66,7 @@ other geometric fields
 
 ![image](https://user-images.githubusercontent.com/60758685/121837222-acbc8d00-cc9a-11eb-858f-78f9ccd2fed2.png)
 
-40 and 5 ar distances to primes under 377, the distance^2 to the prime under N , contain N if you rest N.
-
-n^2-distance^2, the distance is the field, who defines many numbers inside who can be solved with the same field
-
-377-5 = 373 , is prime
-
-377-40 = 337 , is prime
-
-The result using the square as a exponent of dif mod N is the inverse of the module .
+40 , 14 , 56 , 28 and 5 are divisors of carmichaels of N or have common divisors with carmichael , 5 , 89, 257 are modular inverses of divisors of carmichael / totient / decimal expansion length
 
 we can extract the factors by this way with GCD function.
 
