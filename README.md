@@ -2,7 +2,7 @@
 
 A final description of NSIF field, code, and demo
 
-The NSI Field is the distance to the N^E who cross with carmichael multiples, composed by divisors and multiples of eaach divisors, in rsa function returns a common factor number, or common factors with carmichael of N . 
+The NSI Field is the distance to the N^E who cross with carmichael multiples, composed by divisors and multiples of carmichael N, in rsa function returns a common factor number, or common factors with carmichael of N . Allowing us to factorize .
 
 Carmichael = lcm (p1-1) (p2-1) 
 
