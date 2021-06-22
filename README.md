@@ -1,11 +1,10 @@
 # NSIF RSA Attack - Prime grimorie vol 3
 
-a final description of NSIF field, code, and demo
+A final description of NSIF field, code, and demo
 
-The NSI field are the distances from N to previous primes in order of N^2-F^2 defines the expansion of carmichael , the field is the distance to the smaller than N primes, who in rsa function returns a common factor number, or common factors with carmichael of N . As a concecuence carmichael expansion follows this P^2-P. and near this , cross in common the N expansion, because the number was made of N^2-distance to P^2 
+The NSI Field is the distance to the N^E who cross with carmichael multiples, composed by divisors and multiples of eaach divisors, in rsa function returns a common factor number, or common factors with carmichael of N . 
 
-
-LCM (p1-1) (p2-1) 
+Carmichael = lcm (p1-1) (p2-1) 
 
 The camichael expansion of N allways cross N distance of a prime squares, allowing us to calculate derivated composite numbers with factors of N or his carmichael.
 
