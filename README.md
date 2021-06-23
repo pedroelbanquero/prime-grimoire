@@ -14,7 +14,11 @@ generator = carmichael divisors or modular inverses
 
 powMod generator (modular_inverse 1928379187239812173 (N^2-generator^2)) N) - generator = probable factor of N or decrypt (==0)
 
+
 ![image](https://user-images.githubusercontent.com/60758685/122687991-2eeb0b00-d1df-11eb-8a3d-c5577c16928f.png)
+
+
+![image](https://user-images.githubusercontent.com/60758685/123015670-811e5e80-d38e-11eb-9aed-78828128a94c.png)
 
 
 
