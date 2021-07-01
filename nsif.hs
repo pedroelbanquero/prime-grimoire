@@ -153,7 +153,7 @@ nsif n tries
 
 -- Execute as a binary
 -- Usage :
--- ./nsif N 
+-- ./nsif N Tries
 main = do  
     args <- getArgs                  -- IO [String]
     progName <- getProgName          -- IO String
