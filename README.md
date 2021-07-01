@@ -129,3 +129,11 @@ Institutional investigation of this paper is forbidden
 All commercial rights of this document or derivates, are reserved .
 
 Blackhole Consulting 
+
+## Authors
+
+Enrique Santos
+Vicent Nos Ripolles
+
+## Collaborator
+Francisco Blas Izquierdo
