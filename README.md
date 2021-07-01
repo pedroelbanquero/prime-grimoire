@@ -120,6 +120,7 @@ nsif n = filter (\x-> x/=1 && x/=2) $ map (\x-> gcd (n) (powMod x (modular_inver
 12phYWJ5WiGW488ETj4PA8zjF7pCdC5ZWD
 
 
+
 # LICENSE
 
 100 % Pure dark math of Mas de Pascualet
@@ -135,5 +136,9 @@ Blackhole Consulting
 Enrique Santos
 Vicent Nos Ripolles
 
+Mas de pascualet, computation center
+
+
 ## Collaborator
 Francisco Blas Izquierdo
+Phd Student , Chalmers Institute
