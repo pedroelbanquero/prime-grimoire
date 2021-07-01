@@ -101,11 +101,20 @@ The attack is similar to a quadratic sieve, but x^2-y^2 now we have the X who is
 
 ```Haskell
 
-prim n = read ((splitOn " " $ show (P.nextPrime n)) !! 1)::Integer
+nsif n tries
+	| d /=1 && d /= n = (div n d,d,divcar)
+	| otherwise = (0,0,0)
+	where
+ 	base = 2 
+		
+	--(nearsquare) = 2^(logBase 2 n)
+	primesc = nub $ sort $ map prim [1..n]	
+	
+	out2 = head $ reverse ([(1,1)]++ (filter (\(r,u)-> r/=1 ) $ map (\x-> (gcd (n) ((tryperiod ((n)) ((n)^2-(x)^2) x)  ),x)) [2^base..2^base+tries]))
+	d = fst out2
+	divcar = snd out2
 
-sp s l = nub $ sort $  concat $ map (\x-> map (\y-> x*y) (map (\e-> prim (e*2) ) [(s)..(s)+l]) ) (map (\t-> prim (t*3)) [0,(s)..(s)+l])
 
-nsif n = filter (\x-> x/=1 && x/=2) $ map (\x-> gcd (n) (powMod x (modular_inverse 65537 ((n)^2-x^2)) n) - x) $ [2^1024..2^1024+5000]
 
 ```
 
