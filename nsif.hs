@@ -43,20 +43,6 @@ loadprimes = do
 
 primc n l = map (\x-> read ((splitOn " " $ show (P.nextPrime x)) !! 1)::Integer) [1..l]
 
-{-
-nsifc2 n base tries e
-	| out /=1 && out /= n = (div n (fst out),(fst out),(snd out))
-	| otherwise = (0,0,0)
-	where
-	mods = map (\x-> (powMod x 65537 n) ) $ nub $ sort $ map (primes !!) [1..1000]
-	--(nearsquare) = 2^(logBase 2 n)
-	out =  head $ filter (\(r,t)-> r/=1 && r/=2 ) $ map (\x-> ((gcd (n) (tryperiod ((n)) ((n)^e-x^e) x)),x)) $ reverse [base^e..base^e+tries] 
--}
-
--- exponent root
--- search for best base
--- search the best exponent
-
 powRoot n = minimum $ intpowroot (n)
 
 bestroot n = minimum $ nub $ sort $ filter (\(r,e,w)-> e/=n ) $  map (\x-> (n-((integerRoot x n))^x,(integerRoot x n),x) ) [1..1000]
@@ -70,16 +56,9 @@ powDiv n o
 
 intpowroot n =  filter (\(r,f,g)-> (f^g)<=n) $ concat $  map (\x-> map (\y-> (n-(x^y),x,y) ) [2..512]) [2..512]
 
--- loop "bit" squares
---
---
---
-
-
-
-
 bestpow n =  head $ filter (<n) $  map (\x-> map (\y-> (y^x) ) [1..1000]) [1..15]
 
+-- A carrmichael "primorial" composer
 supcar primespair o
 	| lp == 1  = out
 	| otherwise = supcar to out
@@ -89,7 +68,7 @@ supcar primespair o
 	out = lcm (o) (head primespair)
 
 
--- Search for multiple bases 
+-- Modular Exponentation Factorization for multiple bases 
 nsifc n tries
 	| out2 /= 1 && out2 /= n = (div n out2,out2) 
 	| out /=1 && out /= n = (div n out,out)
@@ -156,6 +135,8 @@ primetosquare n = candidates ini (ini^2)
 
 intPowBaseExp n= head $  map (\[h,j,k]-> [k,h]) $ filter (\[e,r,u]-> r=="0") $ map (\([a,b],c)-> [a,b,show c]) $ tail $  map (\x-> (splitOn "." $ show $ (logBase x n),x)) [2..3000]
 
+
+-- Modular Exponentation Factorization
 nsif n tries
 	| d /=1 && d /= n = (div n d,d,divcar)
 	| otherwise = (0,0,0)
@@ -170,8 +151,9 @@ nsif n tries
 	divcar = snd out2
 
 
---
---
+-- Execute as a binary
+-- Usage :
+-- ./nsif N 
 main = do  
     args <- getArgs                  -- IO [String]
     progName <- getProgName          -- IO String
