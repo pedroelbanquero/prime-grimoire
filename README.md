@@ -1,4 +1,6 @@
-# NSIF RSA Attack - Prime grimorie vol 3
+## Factorization by modular exponential base difference
+
+# RSA POISONING ATTACK - Prime grimorie vol 3
 
 A final description of NSIF field, code, and demo
 
