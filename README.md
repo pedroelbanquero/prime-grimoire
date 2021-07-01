@@ -121,11 +121,6 @@ nsif n tries
 ```
 
 
-![image](https://user-images.githubusercontent.com/60758685/121838997-afb97c80-cc9e-11eb-90c1-db7a1c90a735.png)
-
-
-
-
 # DONATIONS BTC
 
 12phYWJ5WiGW488ETj4PA8zjF7pCdC5ZWD
