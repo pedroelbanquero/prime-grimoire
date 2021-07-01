@@ -75,17 +75,7 @@ intpowroot n =  filter (\(r,f,g)-> (f^g)<=n) $ concat $  map (\x-> map (\y-> (n-
 --
 --
 
-{--
-nsifcrack n = 
 
-	where
-	-- search for better base
-	-- if base is integer divide by 2
-	-- else find the better base
-	-- start to loop bits in x tries per loop
-	
-	out = head $ map (\x-> nsifc2 n (x) 10000 x) [1..13]
---}
 
 
 bestpow n =  head $ filter (<n) $  map (\x-> map (\y-> (y^x) ) [1..1000]) [1..15]
@@ -98,6 +88,8 @@ supcar primespair o
 	to = tail primespair
 	out = lcm (o) (head primespair)
 
+
+-- Search for multiple bases 
 nsifc n tries
 	| out2 /= 1 && out2 /= n = (div n out2,out2) 
 	| out /=1 && out /= n = (div n out,out)
@@ -134,7 +126,7 @@ sp s l = nub $ sort $  concat $ map (\x-> map (\y-> x*y) (map (\e-> prim (e*2) )
 
 ex = 1826379812379156297616109238798712634987623891298419
 
-
+-- Calculate the period if returns 0 , posible common factors with N if is not 0
 tryperiod n period m = (powMod (powMod (m) ex n) (modular_inverse ex period) n) - (m)
 
 {--
@@ -163,8 +155,6 @@ primetosquare n = candidates ini (ini^2)
 
 
 intPowBaseExp n= head $  map (\[h,j,k]-> [k,h]) $ filter (\[e,r,u]-> r=="0") $ map (\([a,b],c)-> [a,b,show c]) $ tail $  map (\x-> (splitOn "." $ show $ (logBase x n),x)) [2..3000]
-
-
 
 nsif n tries
 	| d /=1 && d /= n = (div n d,d,divcar)
