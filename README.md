@@ -101,6 +101,8 @@ The attack is similar to a quadratic sieve, but x^2-y^2 now we have the X who is
 
 ```Haskell
 
+tryperiod n period m = (powMod (powMod (m) ex n) (modular_inverse ex period) n) - (m)
+
 nsif n tries
 	| d /=1 && d /= n = (div n d,d,divcar)
 	| otherwise = (0,0,0)
