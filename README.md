@@ -145,6 +145,7 @@ Blackhole Consulting
 ## Authors
 
 Enrique Santos
+
 Vicent Nos Ripolles
 
 Mas de pascualet, computation center
