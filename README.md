@@ -52,9 +52,6 @@ Implementation in RsaCTFTool
 https://github.com/Ganapati/RsaCtfTool/pull/266
 
 
-The attack is similar to a quadratic sieve, but x^2-y^2 now we have the X who is N, and Y are the distances^2 untile a comon factor number, who are the carmichael divisors.
-
-
 # SIMPLE ALGORITHM FOR N BITS
 
 
