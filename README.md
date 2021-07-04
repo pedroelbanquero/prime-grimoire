@@ -12,9 +12,13 @@ The camichael expansion of N allways cross N distance of a prime squares, allowi
 
 Carmciahel of N^2-N ever is composed by original carmichael factors + N factors .
 
-generator = carmichael divisors or modular inverses
+field = carmichael divisors or modular inverses
 
 powMod generator (modular_inverse 1928379187239812173 (N^2-generator^2)) N) - generator = probable factor of N or decrypt (==0)
+
+minimum distance to a power of Q,P = DPQ, DPP
+
+## NSI FIELD = DPP(+-)DPW(+-)1
 
 
 ![image](https://user-images.githubusercontent.com/60758685/122687991-2eeb0b00-d1df-11eb-8a3d-c5577c16928f.png)
