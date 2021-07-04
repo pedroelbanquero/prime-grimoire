@@ -1,12 +1,9 @@
-{-# LANGUAGE FlexibleContexts #-}
-
---Nos Santos Izquierdo Field , PRIME GRIMOIRE SPELLS v0.0.0.2
--- Authors
---  Enrique Santos
---  Vicent Nos
+{-# LANGUAGE DeriveDataTypeable #-}
 
 module Main where
-
+--Authors
+--Enrique Santos
+--Vicent No
 import System.Environment
 import System.Exit
 import System.Console.CmdArgs
@@ -24,8 +21,31 @@ import Math.NumberTheory.Powers
 import Codec.Crypto.RSA.Pure
 
 
+import Distribution.Simple
+import Data.List.Ordered
+import System.Console.CmdArgs
 
 
+
+
+data Greeter = Greeter { cr :: [Char], ir :: [Char] , rr :: [Char]} deriving (Show, Data, Typeable)
+
+options = Greeter { 
+     cr = "" &= explicit &= name "n" &= help "a product of primes"
+   , ir = "" &= explicit &= name "loops" &= help "the number of loops to try"
+   , rr = "" &= explicit &= name "distance" &= help "Santos Nos Distance / starting point"
+
+   } &= program "nsif"  &= summary "Blackhole Consulting - Power Modular factorization by base difference"
+ 
+
+
+main = do
+        op <- cmdArgs options
+        print $ nsif(read (cr op)::Integer) (read (ir op)::Integer) (read (rr op)::Integer) 
+
+
+
+prim n = read ((splitOn " " $ show (P.nextPrime n)) !! 1)::Integer
 
 ex = 1826379812379156297616109238798712634987623891298419
 
@@ -41,4 +61,5 @@ nsif n tries distance
 	out2 = reverse ((1,1): take 1 (dropWhile (\(r,u)-> r==1 && r /= n ) $ map (\x-> (gcd (n) ((tryperiod ((n)) ((n)^2-x^2) x)  ),x)) $ [distance..distance+tries]))
 	d = fst $ head out2
 	divcar = snd $ head out2
+
 
