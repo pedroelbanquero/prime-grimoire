@@ -79,29 +79,14 @@ nsif n tries distance
 
 ## Usage
 
-```
+```Haskell
 
-./nsif --help 
+-- N, loops, distance
 
-Blackhole Consulting - Power Modular factorization by base difference
-
-nsif [OPTIONS]
-
-Common flags:
-  -n=ITEM                  a product of primes
-          --loops=ITEM     the number of loops to try
-          --distance=ITEM  Santos Nos Distance / starting point
-  -?      --help           Display help message
-  -V      --version        Print version information
-
-
-```
-
-```
-
-./nsif -n 377 --loops 0 --distance 3
+./nsif 377 0 3
 
 (29,13,3)
+
 
 ```
 
