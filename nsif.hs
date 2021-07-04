@@ -3,31 +3,15 @@
 module Main where
 --Authors
 --Enrique Santos
---Vicent No
-import System.Environment
-import System.Exit
-import System.Console.CmdArgs
-
-import Data.List.Ordered
-import Data.List.Split 
-import Data.List (subsequences)
-
-import Data.Numbers.Primes
-import qualified Math.NumberTheory.Primes as P
-import Math.NumberTheory.ArithmeticFunctions
-import Math.NumberTheory.Powers.Modular
-import Math.NumberTheory.Powers.Squares
-import Math.NumberTheory.Powers
-import Codec.Crypto.RSA.Pure
-
-
-import Distribution.Simple
-import Data.List.Ordered
-import System.Console.CmdArgs
+--Vicent Nos
+import Prelude hiding () 
+import Math.NumberTheory.Powers.Modular (powMod)
+import Codec.Crypto.RSA.Pure (modular_inverse)
+--import System.Console.CmdArgs
 
 
 
-
+{-
 data Greeter = Greeter { cr :: [Char], ir :: [Char] , rr :: [Char]} deriving (Show, Data, Typeable)
 
 options = Greeter { 
@@ -42,10 +26,10 @@ options = Greeter {
 main = do
         op <- cmdArgs options
         print $ nsif(read (cr op)::Integer) (read (ir op)::Integer) (read (rr op)::Integer) 
+-}
 
-
-
-prim n = read ((splitOn " " $ show (P.nextPrime n)) !! 1)::Integer
+main = do 
+	print $ nsif 377 100 3
 
 ex = 1826379812379156297616109238798712634987623891298419
 
