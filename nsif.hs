@@ -31,25 +31,11 @@ ex2 = 1826379812379156297616109238798712634987623891298419
 
 ex = 13 
 
+{- | For result 0 is the period , if period is NSI is common factor of N.  -}
 tryperiod n period _ = (powMod 2 (ex * modular_inverse ex period - 1) n) - 1
 
-primetosquare :: Integer -> [Integer]
-{- | Search for squares 'o2' and check if subtracting (n - 1) is prime.  -}
-primetosquare n = candidates ini (ini^2)
-   where
-   ini = integerSquareRoot (n - 1)
-   candidates i i2
-      -- | i > limit    = []
-      | isPrime x = x : candidates o o2
-      | otherwise = candidates o o2
-      where 
-      o  = i + 1
-      o2 = i2 + i + o   -- o2 = (i + 1)^2 = i^2 + i + (i + 1)
-      x  = o2 - n + 1   -- (n - 1 + x) must be a perfect square 
 
-
-
-
+{- | N is the pubkey  -}
 nsif n tries distance
 	| d /=1 && d /= n = (div n d,d,divcar)
 	| otherwise = (0,0,0)
