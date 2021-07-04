@@ -14,7 +14,7 @@ Carmciahel of N^2-N ever is composed by original carmichael factors + N factors 
 
 field = carmichael divisors or modular inverses
 
-powMod field (modular_inverse 1928379187239812173 (N^2-generator^2)) N) - field = probable factor of N or decrypt (==0)
+powMod field (modular_inverse 1928379187239812173 (N^2-field^2)) N) - field = probable factor of N or decrypt (==0)
 
 minimum distance to a power of Q,P = DPQ, DPP
 
