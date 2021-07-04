@@ -20,6 +20,8 @@ minimum distance to a power of Q,P = DPQ, DPP
 
 ## NSI FIELD = DPP(+-)DPW(+-)1
 
+![image](https://user-images.githubusercontent.com/60758685/124370792-9faf1000-dc40-11eb-97a2-840a9c7d0f4c.png)
+
 
 ![image](https://user-images.githubusercontent.com/60758685/122687991-2eeb0b00-d1df-11eb-8a3d-c5577c16928f.png)
 
