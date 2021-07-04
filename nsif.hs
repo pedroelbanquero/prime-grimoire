@@ -1,6 +1,6 @@
 {-# LANGUAGE FlexibleContexts #-}
 
---Nos Santos Izquierdo Field , PRIME GRIMOIRE SPELLS v0.1
+--Nos Santos Izquierdo Field , PRIME GRIMOIRE SPELLS v0.0.0.2
 -- Authors
 --  Enrique Santos
 --  Vicent Nos
@@ -58,7 +58,6 @@ intpowroot n =  filter (\(r,f,g)-> (f^g)<=n) $ concat $  map (\x-> map (\y-> (n-
 
 bestpow n =  head $ filter (<n) $  map (\x-> map (\y-> (y^x) ) [1..1000]) [1..15]
 
--- A carrmichael "primorial" composer
 supcar primespair o
 	| lp == 1  = out
 	| otherwise = supcar to out
@@ -67,8 +66,6 @@ supcar primespair o
 	to = tail primespair
 	out = lcm (o) (head primespair)
 
-
--- Modular Exponentation Factorization for multiple bases 
 nsifc n tries
 	| out2 /= 1 && out2 /= n = (div n out2,out2) 
 	| out /=1 && out /= n = (div n out,out)
@@ -103,11 +100,14 @@ sp s l = nub $ sort $  concat $ map (\x-> map (\y-> x*y) (map (\e-> prim (e*2) )
 
 
 
-ex = 1826379812379156297616109238798712634987623891298419
+ex2 = 1826379812379156297616109238798712634987623891298419
 
--- Calculate the period if returns 0 , posible common factors with N if is not 0
-tryperiod n period m = (powMod (powMod (m) ex n) (modular_inverse ex period) n) - (m)
+ex = 13 
 
+tryperiod2 n period m = (powMod m (ex*modular_inverse ex period) n) - (m)
+
+
+tryperiod n period _ = (powMod 2 (ex * modular_inverse ex period - 1) n) - 1
 {--
 -- | Cypher 'm', and tries to uncypher using 'period' as the subgroup order
 tryperiod n period m = 
@@ -136,24 +136,19 @@ primetosquare n = candidates ini (ini^2)
 intPowBaseExp n= head $  map (\[h,j,k]-> [k,h]) $ filter (\[e,r,u]-> r=="0") $ map (\([a,b],c)-> [a,b,show c]) $ tail $  map (\x-> (splitOn "." $ show $ (logBase x n),x)) [2..3000]
 
 
--- Modular Exponentation Factorization
-nsif n tries
+
+nsif n tries distance
 	| d /=1 && d /= n = (div n d,d,divcar)
 	| otherwise = (0,0,0)
 	where
- 	base = 2 
-		
-	--(nearsquare) = 2^(logBase 2 n)
-	primesc = nub $ sort $ map prim [1..n]	
-	
-	out2 = head $ reverse ([(1,1)]++ (filter (\(r,u)-> r/=1 ) $ map (\x-> (gcd (n) ((tryperiod ((n)) ((n)^2-(x)^2) x)  ),x)) [2^base..2^base+tries]))
-	d = fst out2
-	divcar = snd out2
+	modin = head $ map fst $ powDiv n [] 
+	out2 = reverse ((1,1): take 1 (dropWhile (\(r,u)-> r==1 && r /= n ) $ map (\x-> (gcd (n) ((tryperiod ((n)) ((n)^2-x^2) x)  ),x)) $ [distance..distance+tries]))
+	d = fst $ head out2
+	divcar = snd $ head out2
 
 
--- Execute as a binary
--- Usage :
--- ./nsif N Tries
+--
+--
 main = do  
     args <- getArgs                  -- IO [String]
     progName <- getProgName          -- IO String
