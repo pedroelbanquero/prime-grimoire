@@ -4,14 +4,47 @@ module Main where
 --Authors
 --Enrique Santos
 --Vicent Nos
-import Prelude hiding () 
-import Math.NumberTheory.Powers.Modular (powMod)
-import Codec.Crypto.RSA.Pure (modular_inverse)
-import System.Console.CmdArgs
+
+import System.Environment
+
+modular_inverse :: Integer {- ^e -} ->
+                   Integer  {- ^phi -} ->
+                   Integer
+modular_inverse e phi = x `mod` phi
+ where (_, x, _) = extended_euclidean e phi
+
+-- Compute the extended euclidean algorithm
+extended_euclidean :: Integer -> Integer -> (Integer, Integer, Integer)
+extended_euclidean a b | d < 0     = (-d, -x, -y)
+                       | otherwise = (d, x, y)
+ where
+  (d, x, y) = egcd a b
+
+egcd :: Integer -> Integer -> (Integer, Integer, Integer)
+egcd 0 b = (b, 0, 1)
+egcd a b = let (g, y, x) = egcd (b `mod` a) a
+           in (g, x - ((b `div` a) * y), y)
 
 
+powMod :: (Integral a, Integral b) => a -> b -> a -> a
+powMod x y m
+  | m <= 0    = error "powModInt: non-positive modulo"
+  | y <  0    = error "powModInt: negative exponent"
+  | otherwise = f (x `rem` m) y 1 `mod` m
+  where
+    f _ 0 acc = acc
+    f b e acc = f (b * b `rem` m) (e `quot` 2)
+      (if odd e then (b * acc `rem` m) else acc)
 
 
+main = do
+	a <- getArgs 
+	let n = a !! 0
+	let l = a !! 1
+	let d = a !! 2
+	print $ nsif (read n::Integer) (read l::Integer) (read d::Integer)
+
+{--
 data Greeter = Greeter { cr :: [Char], ir :: [Char] , rr :: [Char]} deriving (Show, Data, Typeable)
 
 options = Greeter { 
@@ -27,7 +60,7 @@ main = do
         op <- cmdArgs options
         print $ nsif(read (cr op)::Integer) (read (ir op)::Integer) (read (rr op)::Integer) 
 
-
+--}
 
 ex = 1826379812379156297616109238798712634987623891298419
 
