@@ -14,11 +14,22 @@ Carmciahel of N^2-N ever is composed by original carmichael factors + N factors 
 
 field = carmichael divisors or modular inverses, or sum of distances to a near square from PQ, or the rest of the distance to a near square  of PQ
 
+
 powMod field (modular_inverse 1928379187239812173 (N^2-field^2)) N) - field = probable factor of N or decrypt (==0)
 
 minimum distance to a power of Q,P = DPQ, DPP
 
+## DPQ = X^E - Q
+
+## DPP = X^E - P
+
+*x^e is the nearest power to P or Q
+
 ## NSI FIELD = DPP(+-)DPW(+-)1
+
+
+## FACTOR N = gcd N ( powMod field (modular_inverse 1928379187239812173 (N^2-(DPQ(+-)DPP+-1)^2)) N) - (DPQ(+-)DPP+-1) )
+
 
 ![image](https://user-images.githubusercontent.com/60758685/124370792-9faf1000-dc40-11eb-97a2-840a9c7d0f4c.png)
 
