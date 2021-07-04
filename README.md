@@ -12,7 +12,7 @@ The camichael expansion of N allways cross N distance of a prime squares, allowi
 
 field = carmichael divisors or modular inverses, or sum of distances to a near square from PQ, or the rest of the distance to a near square  of PQ
 
-powMod field (modular_inverse 1928379187239812173 (N^2-field^2)) N) - field = probable factor of N or decrypt (==0)
+powMod field (modular_inverse 1928379187239812173 (N^2-field^2)) N) - field = factor of N or decrypt (==0)
 
 minimum distance to a power of Q,P = DPQ, DPP
 
