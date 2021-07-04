@@ -10,10 +10,7 @@ Carmichael = lcm (p1-1) (p2-1)
 
 The camichael expansion of N allways cross N distance of a prime squares, allowing us to calculate derivated composite numbers with factors of N or his carmichael.
 
-Carmciahel of N^2-N ever is composed by original carmichael factors + N factors .
-
 field = carmichael divisors or modular inverses, or sum of distances to a near square from PQ, or the rest of the distance to a near square  of PQ
-
 
 powMod field (modular_inverse 1928379187239812173 (N^2-field^2)) N) - field = probable factor of N or decrypt (==0)
 
