@@ -27,8 +27,7 @@ minimum distance to a power of Q,P = DPQ, DPP
 
 ## NSI FIELD = DPP(+-)DPW(+-)1
 
-
-## FACTOR N = gcd N ( powMod NSI (modular_inverse 1928379187239812173 (N^2-(NSI)^2)) N) - (NSI) )
+## FACTOR N = gcd N ( powMod NSI (modular_inverse E (N^2-(NSI)^2)) N) - (NSI) )
 
 
 ![image](https://user-images.githubusercontent.com/60758685/124370792-9faf1000-dc40-11eb-97a2-840a9c7d0f4c.png)
