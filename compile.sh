@@ -1,2 +1,2 @@
-ghc nsif.hs -o nsif
+ghc nsif.hs -o nsif -O2
 strip nsif
