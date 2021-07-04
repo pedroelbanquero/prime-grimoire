@@ -8,7 +8,7 @@ synopsis:            factorization using santos-nos distance in a power modular 
 homepage:            https://blackhole.consulting
 license:             MIT
 license-file:        LICENSE
-author:              Vicent Nos
+author:              Enrique Santos,Vicent Nos
 maintainer:          vnos@blackhole.consulting
 -- copyright:
 category:            Math
