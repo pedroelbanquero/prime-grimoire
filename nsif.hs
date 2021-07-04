@@ -7,11 +7,11 @@ module Main where
 import Prelude hiding () 
 import Math.NumberTheory.Powers.Modular (powMod)
 import Codec.Crypto.RSA.Pure (modular_inverse)
---import System.Console.CmdArgs
+import System.Console.CmdArgs
 
 
 
-{-
+
 data Greeter = Greeter { cr :: [Char], ir :: [Char] , rr :: [Char]} deriving (Show, Data, Typeable)
 
 options = Greeter { 
@@ -26,10 +26,8 @@ options = Greeter {
 main = do
         op <- cmdArgs options
         print $ nsif(read (cr op)::Integer) (read (ir op)::Integer) (read (rr op)::Integer) 
--}
 
-main = do 
-	print $ nsif 377 100 3
+
 
 ex = 1826379812379156297616109238798712634987623891298419
 
