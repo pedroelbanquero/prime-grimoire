@@ -53,7 +53,7 @@ ex = 1826379812379156297616109238798712634987623891298419
 tryperiod n period _ = (powMod 2 (ex * modular_inverse ex period - 1) n) - 1
 
 
-{- | N is the pubkey  -}
+{- | N is the pubkey, tries is the number of tries in the loop, until when try to sum 1, distance is the starting distance  -}
 nsif n tries distance
 	| d /=1 && d /= n = (div n d,d,divcar)
 	| otherwise = (0,0,0)
