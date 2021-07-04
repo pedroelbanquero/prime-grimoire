@@ -60,20 +60,21 @@ The attack is similar to a quadratic sieve, but x^2-y^2 now we have the X who is
 
 ```Haskell
 
-tryperiod n period m = (powMod (powMod (m) ex n) (modular_inverse ex period) n) - (m)
 
-nsif n tries
+ex = 1826379812379156297616109238798712634987623891298419
+
+{- | For result 0 is the period , if period is NSI is common factor of N.  -}
+tryperiod n period _ = (powMod 2 (ex * modular_inverse ex period - 1) n) - 1
+
+
+{- | N is the pubkey, tries is the number of tries in the loop, until when try to sum 1, distance is the starting distance  -}
+nsif n tries distance
 	| d /=1 && d /= n = (div n d,d,divcar)
 	| otherwise = (0,0,0)
 	where
- 	base = 2 
-		
-	--(nearsquare) = 2^(logBase 2 n)
-	primesc = nub $ sort $ map prim [1..n]	
-	
-	out2 = head $ reverse ([(1,1)]++ (filter (\(r,u)-> r/=1 ) $ map (\x-> (gcd (n) ((tryperiod ((n)) ((n)^2-(x)^2) x)  ),x)) [2^base..2^base+tries]))
-	d = fst out2
-	divcar = snd out2
+	out2 = reverse ((1,1): take 1 (dropWhile (\(r,u)-> r==1 && r /= n ) $ map (\x-> (gcd (n) ((tryperiod ((n)) ((n)^2-x^2) x)  ),x)) $ [distance..distance+tries]))
+	d = fst $ head out2
+	divcar = snd $ head out2
 
 
 
