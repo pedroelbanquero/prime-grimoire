@@ -4,11 +4,11 @@
 
 A final description of NSIF field, code, and demo
 
-The NSI Field is the distance to the N^E who cross with carmichael multiples, composed by divisors and multiples of carmichael N, in rsa function returns a common factor number, or common factors with carmichael of N . Allowing us to factorize .
+The NSI Field is the distance to the N^E who can be divided by carmichael of N, composed by divisors and multiples of carmichael N, in rsa function returns a common factor number, or common factors with carmichael of N . Allowing us to factorize .
 
 Carmichael = lcm (p1-1) (p2-1) 
 
-field = carmichael divisors or modular inverses, or sum of distances to a near square from PQ, or the rest of the distance to a near square  of PQ
+field = carmichael divisors or modular inverses, or sum of distances to a near power from PQ, or the rest of the distance to a near power  of PQ
 
 powMod field (modular_inverse 1928379187239812173 (N^2-field^2)) N) - field = factor of N or decrypt (==0)
 
@@ -22,7 +22,7 @@ minimum distance to a power of Q,P = DPQ, DPP
 
 ## NSI FIELD = DPP(+-)DPQ(+-)1
 
-## FACTOR N = tryperiod n period _ = (powMod 2 (ex * modular_inverse ex period - 1) n) - 1
+## FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex period - 1) n) - 1
 
 ![image](https://user-images.githubusercontent.com/60758685/124370792-9faf1000-dc40-11eb-97a2-840a9c7d0f4c.png)
 
