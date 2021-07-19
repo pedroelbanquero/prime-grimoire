@@ -192,7 +192,7 @@ Vicent Nos Ripolles (Hacker)
 Francisco Blas Izquierdo (Hacker)
 Phd Student , Chalmers Institute
 
-BanachTarskiVeli (Math, Hacker) (Reddit)
+BanachTarskiVeli (Math, Hacker) (Anonymous Reddit User)
 
 
 Mas de pascualet, computation center
