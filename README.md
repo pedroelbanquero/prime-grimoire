@@ -46,7 +46,7 @@ minimum distance to a power of Q,P = DPQ, DPP
 
 x^d - x for x ∈ [1,n]
 
-where you choose d such that 65537d is congruent to 1 modulo n. In your example (when n = 377) you get d = 309. This works well for you because 309 ≡ 1 (mod (p-1)) with p = 29. Note that in the same way as my example we just then get that
+where you choose d such that 65537d is congruent to 1 modulo n. In the example (when n = 377) you get d = 309. This works well for you because 309 ≡ 1 (mod (p-1)) with p = 29. 
 
 x^d - x ≡ x^1 - x ≡ 0 mod p
 
