@@ -64,7 +64,7 @@ https://github.com/Ganapati/RsaCtfTool/pull/266
 The tool allow you to compare the result of Power Modular Factorization / Rsa Poisoning versus other factorization methods .
 
 
-# SIMPLE ALGORITHM FOR N BITS
+# SIMPLE ALGORITHM FOR N BITS (Haskell)
 
 
 ```Haskell
