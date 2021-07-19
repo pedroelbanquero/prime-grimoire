@@ -4,13 +4,11 @@
 
 A final description of NSIF field, code, and demo
 
-The NSI Field is the distance to the N^E who cross with carmichael multiples, composed by divisors and multiples of carmichael N, in rsa function returns a common factor number, or common factors with carmichael of N . Allowing us to factorize .
+The NSI Field is the distance to the N^E who can be divided by carmichael of N, composed by divisors and multiples of carmichael N, in rsa function returns a common factor number, or common factors with carmichael of N . Allowing us to factorize .
 
 Carmichael = lcm (p1-1) (p2-1) 
 
-The camichael expansion of N allways cross N distance of a prime squares, allowing us to calculate derivated composite numbers with factors of N or his carmichael.
-
-field = carmichael divisors or modular inverses, or sum of distances to a near square from PQ, or the rest of the distance to a near square  of PQ
+field = carmichael divisors or modular inverses, or sum of distances to a near power from PQ, or the rest of the distance to a near power  of PQ
 
 powMod field (modular_inverse 1928379187239812173 (N^2-field^2)) N) - field = factor of N or decrypt (==0)
 
@@ -24,8 +22,7 @@ minimum distance to a power of Q,P = DPQ, DPP
 
 ## NSI FIELD = DPP(+-)DPQ(+-)1
 
-## FACTOR N = gcd N ( powMod NSI (modular_inverse E (N^2-(NSI)^2)) N) - (NSI) )
-
+## FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex period - 1) n) - 1
 
 ![image](https://user-images.githubusercontent.com/60758685/124370792-9faf1000-dc40-11eb-97a2-840a9c7d0f4c.png)
 
@@ -79,29 +76,27 @@ nsif n tries distance
 
 ## Usage
 
-```
+```Haskell
 
-./nsif --help 
+-- N, loops, distance
 
-Blackhole Consulting - Power Modular factorization by base difference
-
-nsif [OPTIONS]
-
-Common flags:
-  -n=ITEM                  a product of primes
-          --loops=ITEM     the number of loops to try
-          --distance=ITEM  Santos Nos Distance / starting point
-  -?      --help           Display help message
-  -V      --version        Print version information
-
-
-```
-
-```
-
-./nsif -n 377 --loops 0 --distance 3
+./nsif 377 0 3
 
 (29,13,3)
+
+
+
+OR
+
+ghci nsif.hs
+
+*Main> nsif 257585468675898878692697829828877177271726674504483915376269783623698607231869350800480020861461078316108953783989889820659511261545507627 1000000 0
+
+(4567759074507740406477787437675267212178680251724974985372646979034083,56392087339601733413306017749077372989860250021295987473736382457369,12725)
+
+(22.48 secs, 13,534,650,280 bytes)
+
+
 
 ```
 
@@ -123,13 +118,17 @@ Blackhole Consulting
 
 ## Authors
 
-Enrique Santos
+Enrique Santos (Intellectual author)
+ 
+Vicent Nos Ripolles (Hacker)
 
-Vicent Nos Ripolles
+Francisco Blas Izquierdo (Hacker)
+Phd Student , Chalmers Institute
+
+BanachTarskiVeli (Math, Hacker)
+
 
 Mas de pascualet, computation center
 
 
-## Collaborator
-Francisco Blas Izquierdo
-Phd Student , Chalmers Institute
+
