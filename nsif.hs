@@ -44,23 +44,7 @@ main = do
 	let d = a !! 2
 	print $ nsif (read n::Integer) (read l::Integer) (read d::Integer)
 
-{--
-data Greeter = Greeter { cr :: [Char], ir :: [Char] , rr :: [Char]} deriving (Show, Data, Typeable)
 
-options = Greeter { 
-     cr = "" &= explicit &= name "n" &= help "a product of primes"
-   , ir = "" &= explicit &= name "loops" &= help "the number of loops to try"
-   , rr = "" &= explicit &= name "distance" &= help "Santos Nos Distance / starting point"
-
-   } &= program "nsif"  &= summary "Blackhole Consulting - Power Modular factorization by base difference"
- 
-
-
-main = do
-        op <- cmdArgs options
-        print $ nsif(read (cr op)::Integer) (read (ir op)::Integer) (read (rr op)::Integer) 
-
---}
 
 ex2 = 1826379812379156297616109238798712634987623891298419
 ex = 13
