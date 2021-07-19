@@ -118,13 +118,17 @@ Blackhole Consulting
 
 ## Authors
 
-Enrique Santos
+Enrique Santos (Intellectual author)
+ 
+Vicent Nos Ripolles (Hacker)
 
-Vicent Nos Ripolles
+Francisco Blas Izquierdo (Hacker)
+Phd Student , Chalmers Institute
+
+BanachTarskiVeli (Math, Hacker)
+
 
 Mas de pascualet, computation center
 
 
-## Collaborator
-Francisco Blas Izquierdo
-Phd Student , Chalmers Institute
+
