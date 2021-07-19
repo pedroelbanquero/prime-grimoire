@@ -88,7 +88,7 @@ nsif n tries distance
 
 
 ```
-# Another version log based c++
+# Another version log based c++ (Fastest)
 * made by banachtarskiveli in reddit challenge
 
 ```c
