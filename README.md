@@ -89,7 +89,7 @@ nsif n tries distance
 
 ```
 # Another version log based c++
-* made by banachtarskiveli in reddit challange
+* made by banachtarskiveli in reddit challenge
 
 ```c
 
