@@ -5,7 +5,7 @@ module Main where
 --Enrique Santos
 --Vicent Nos
 
-import System.Environment
+import System.Environment (getArgs)
 
 modular_inverse :: Integer {- ^e -} ->
                    Integer  {- ^phi -} ->
@@ -62,8 +62,8 @@ main = do
 
 --}
 
-ex = 1826379812379156297616109238798712634987623891298419
-
+ex2 = 1826379812379156297616109238798712634987623891298419
+ex = 13
 {- | For result 0 is the period , if period is NSI is common factor of N.  -}
 tryperiod n period _ = (powMod 2 (ex * modular_inverse ex period - 1) n) - 1
 
