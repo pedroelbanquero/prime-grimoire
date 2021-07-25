@@ -73,7 +73,7 @@ The tool allow you to compare the result of Power Modular Factorization / Rsa Po
 ex = 1826379812379156297616109238798712634987623891298419
 
 {- | For result 0 is the period , if period is NSI is common factor of N.  -}
-tryperiod n period _ = (powMod 2 (ex * modular_inverse ex period - 1) n) - 1
+tryperiod n period _ = (powMod 2 (ex * (modular_inverse ex period) - 1) n) - 1
 
 
 {- | N is the pubkey, tries is the number of tries in the loop, until when try to sum 1, distance is the starting distance  -}
