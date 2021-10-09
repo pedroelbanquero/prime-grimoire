@@ -10,11 +10,6 @@ p1 = safe prime
 
 p2 = p1 + Power + NSI 
 
-crmichael = lcm (p1-1) (p2-1) 
-
-powMod field (modular_inverse 1928379187239812173 (N^2-field^2)) N) - field = factor of N or decrypt (==0)
-
-
 ## NSI = P - Q - Max Power
 
 ## FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex NSI - 1) n) - 1
