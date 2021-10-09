@@ -14,7 +14,6 @@ crmichael = lcm (p1-1) (p2-1)
 
 powMod field (modular_inverse 1928379187239812173 (N^2-field^2)) N) - field = factor of N or decrypt (==0)
 
-minimum distance to a power of Q,P = DPQ, DPP
 
 ## NSI = P - Q - Max Power
 
