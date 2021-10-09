@@ -2,31 +2,25 @@
 
 # RSA POISONING ATTACK - Prime grimorie vol 3
 
-A final description of NSIF field, code, and demo
+A final description of NSIF group, code, and demo
 
-The NSI Field is the distance to the N^E who can be divided by carmichael of N, composed by divisors and multiples of carmichael N, in rsa function returns a common factor number, or common factors with carmichael of N . Allowing us to factorize .
+The NSI group is the distance among p1 and p2 less the nearest power
 
-Carmichael = lcm (p1-1) (p2-1) 
+p1 = safe prime
 
-field = carmichael divisors or modular inverses, or sum of distances to a near power from PQ, or the rest of the distance to a near power  of PQ
+p2 = p1 + Power + NSI 
+
+crmichael = lcm (p1-1) (p2-1) 
 
 powMod field (modular_inverse 1928379187239812173 (N^2-field^2)) N) - field = factor of N or decrypt (==0)
 
 minimum distance to a power of Q,P = DPQ, DPP
 
-## DPQ = X^E - Q
+## NSI = P - Q - Max Power
 
-## DPP = X^E - P
-
-*x^e is the nearest power to P or Q
-
-## NSI FIELD = DPP(+-)DPQ(+-)1
-
-## FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex period - 1) n) - 1
+## FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex NSI - 1) n) - 1
 
 ![image](https://user-images.githubusercontent.com/60758685/124370792-9faf1000-dc40-11eb-97a2-840a9c7d0f4c.png)
-
-
 
 
 ```Haskell
