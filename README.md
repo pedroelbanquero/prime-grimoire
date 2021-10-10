@@ -14,7 +14,7 @@ p2 = p1 + Power + NSI
 
 ## FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex NSI - 1) n) - 1
 
-## mod (n^2) (p-q) < (p-q) IF mod (p||q) (x^e) < ( (p||q) - 1 )
+## mod (n^2) (p-q) < (p-q) 
 
 
 ![image](https://user-images.githubusercontent.com/60758685/124370792-9faf1000-dc40-11eb-97a2-840a9c7d0f4c.png)
