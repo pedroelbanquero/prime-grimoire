@@ -10,9 +10,9 @@ p1 = safe prime
 
 p2 = p1 + Power + NSI 
 
-## NSI = n^2 - mod (n^2) (p-q)
+## NSI = n^2 - $ minimum ( mod (n^2) (p-q) , mod (n^2) ((p-1) or (q-1)) )
 
-## FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex NSI - 1) n) - 1
+## FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex (NSI) - 1) n) - 1
 
 ## mod (n^2) (p-q) < (p-q) 
 
