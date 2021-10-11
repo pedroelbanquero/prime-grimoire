@@ -1,20 +1,21 @@
-## Factorization by modular exponential base difference
+## Factorization by power P-Q differences
 
 # RSA POISONING ATTACK - Prime grimorie vol 3
 
 A final description of NSIF group, code, and demo
 
-The NSI group is the distance among p1 and p2 less the nearest power
+The NSI group is the distance among n^2 and multiple of p or q -1 , or p-q, or p , or q multiple, when (p-q) is near a power .
 
-p1 = safe prime
-
-p2 = p1 + Power + NSI 
+Many semiprimes are in the same distance of n^2 to find the NSI, and factorize the number with the same distance.
 
 ## NSI = n^2 - $ minimum ( mod (n^2) (p-q) , mod (n^2) ((p-1) or (q-1)) )
 
 ## FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex (NSI) - 1) n) - 1
 
-## mod (n^2) (p-q) < (p-q) when (p-q) near a power
+## Conjecture 
+
+## mod (n^2) (p-q) < (p-q), when (p-q) near a power
+
 
 
 ![image](https://user-images.githubusercontent.com/60758685/124370792-9faf1000-dc40-11eb-97a2-840a9c7d0f4c.png)
