@@ -14,6 +14,8 @@ Many semiprimes are in the same distance of n^2 to find the NSI, and factorize t
 
 ## Conjecture 
 
+If n is product of 2 primes :
+
 ## mod (n^2) (p-q) < (p-q), when (p-q) near a power
 
 ## mod ((p*q)^2) (p-q) = 1 or prime or square 
