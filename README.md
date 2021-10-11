@@ -10,7 +10,7 @@ p1 = safe prime
 
 p2 = p1 + Power + NSI 
 
-## NSI = mod (n^2) (p-q)
+## NSI = n^2 - mod (n^2) (p-q)
 
 ## FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex NSI - 1) n) - 1
 
