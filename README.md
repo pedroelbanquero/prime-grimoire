@@ -19,8 +19,6 @@ If n is product of 2 primes :
 
 ## mod (n^2) (p-q) < (p-q) , easy factorize from distance than find a factor 
 
-## mod (b^e*z^x) (b^e-z^x) = 0
-
 ## mod ((p*q)^2) (p-q) = 1 or prime or square 
 
 ![image](https://user-images.githubusercontent.com/60758685/124370792-9faf1000-dc40-11eb-97a2-840a9c7d0f4c.png)
