@@ -21,35 +21,6 @@ If n is product of 2 primes :
 
 ## mod ((p*q)^2) (p-q) = 1 or prime or square 
 
-![image](https://user-images.githubusercontent.com/60758685/124370792-9faf1000-dc40-11eb-97a2-840a9c7d0f4c.png)
-
-
-```Haskell
-
-*Main> gcd (377) $ (powMod 40 (modular_inverse 65537 (377^2-40^2)) 377) - 40
-
-13
-
-
-*Main> gcd (377) $ (powMod 5 (modular_inverse 65537 (377^2-5^2)) 377) - 5
-
-13
-
-
-
-```
-
-x^d - x for x ∈ [1,n]
-
-where you choose d such that 65537d is congruent to 1 modulo n. In the example (when n = 377) you get d = 309. This works well for you because 309 ≡ 1 (mod (p-1)) with p = 29. 
-
-x^d - x ≡ x^1 - x ≡ 0 mod p
-
-by Fermat's little thm. So whenever you take an element x which has an order in the multiplicative group modulo q that does not divide d-1 = 308. For example, when x = 2 you get that the multiplicative order of x mod q is 12 (and 12 does not divide 308) while the order of x mod p is 28 which does divide 308 (obviously, since all orders must divide p-1).
-
-So you get a factor of 377 exactly when x is such that the order of x mod q does not divide d-1=308. Note that the orders or the elements of the multiplicative group modulo q, when q is 13 are (here written as (representative, order) pairs):
-
-(1,1), (2,12), (3,3), (4,6), (5,4), (6,12), (7,12), (8,4), (9,3), (10,6), (11,12), (12,2) 
 
 
 # Implementation in RsaCTFTool
