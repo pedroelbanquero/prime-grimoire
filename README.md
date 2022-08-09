@@ -23,6 +23,8 @@ If n is product of 2 primes :
 
 ## 4PQ = (P+Q)^2-(P-Q)^2
 
+## gcd (pq) (mod ((p+q)^3-(p-q)^3) (pq) ) = factor
+
 ![image](https://user-images.githubusercontent.com/60758685/183696769-c087195a-cfd3-465a-9ef7-3dfb51f05217.png)
 
 ![image](https://user-images.githubusercontent.com/60758685/183696846-598ffa20-07ba-4f2e-a8ab-a9307ddf6721.png)
