@@ -176,7 +176,7 @@ Phd Student , Chalmers Institute
 BanachTarskiVeli (Math, Hacker) (Anonymous Reddit User) (Fastest Benchmark)
 
 
-Mas de pascualet, computation center
+Maestrazgo , computation center
 
 
 
