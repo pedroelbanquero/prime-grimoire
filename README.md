@@ -21,6 +21,9 @@ If n is product of 2 primes :
 
 ## mod ((p*q)^2) (p-q) = 1 or prime or square 
 
+## 4PQ = (P+Q)^2-(P-Q)^2
+
+
 
 
 # Implementation in RsaCTFTool
