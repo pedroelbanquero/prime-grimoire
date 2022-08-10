@@ -25,6 +25,8 @@ If n is product of 2 primes :
 
 ## gcd (pq) (mod ((p+q)^3-(p-q)^3) (pq) ) = factor
 
+FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex (p-q || p+q multiples ) - 1) n) - 1
+
 ![image](https://user-images.githubusercontent.com/60758685/183696769-c087195a-cfd3-465a-9ef7-3dfb51f05217.png)
 
 ![image](https://user-images.githubusercontent.com/60758685/183696846-598ffa20-07ba-4f2e-a8ab-a9307ddf6721.png)
