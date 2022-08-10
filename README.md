@@ -4,9 +4,8 @@
 
 A final description of NSIF group, code, and demo
 
-The NSI group is the distance among n^2 and multiple of p or q -1 , or p-q, or p , or q multiple, when (p-q) is near a power .
+The NSI group is the smallest distance among n^2 and multiple of p or q -1 , or p-q, or p , or q multiple to the nearest power.
 
-Many semiprimes are in the same distance of n^2 to find the NSI, and factorize the number with the same distance.
 
 ## NSI = n^2 - $ minimum ( mod (n^2) (p-q) , mod (n^2) ((p-1) or (q-1)) )
 
