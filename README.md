@@ -32,6 +32,8 @@ If n is product of 2 primes :
 
 ## n^2 / 6 = (y + 1) * x6
 
+## 1 = ((sqrt (x * 6+1) * (sqrt (y * 6+1)))^2) - ( (x * 6+y * 6) + ((x * 6)*(y * 6)))
+## 1 =  ((p * q)^2) - ( (p^2-1+q^2-1) + ((q^2-1) * (p^2-1)))
 
 # Factorization from (n^2-1 / 6)
 
