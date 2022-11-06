@@ -32,7 +32,6 @@ If n is product of 2 primes :
 
 ## n^2 / 6 = (y + 1) * x6
 
-## Factorize when n^2-1 / 6 is factorizable with ECM or GNFS
 
 ![image](https://user-images.githubusercontent.com/60758685/183696769-c087195a-cfd3-465a-9ef7-3dfb51f05217.png)
 
