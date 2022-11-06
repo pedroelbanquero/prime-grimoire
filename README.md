@@ -33,10 +33,9 @@ If n is product of 2 primes :
 ## n^2 / 6 = (y + 1) * x6
 
 
-![image](https://user-images.githubusercontent.com/60758685/183696769-c087195a-cfd3-465a-9ef7-3dfb51f05217.png)
+# Factorization from (n^2-1 / 6)
 
-![image](https://user-images.githubusercontent.com/60758685/183696846-598ffa20-07ba-4f2e-a8ab-a9307ddf6721.png)
-
+![image](https://user-images.githubusercontent.com/60758685/200155828-2d994399-c8f9-4999-b6ab-ac703f6ec750.png)
 
 
 
@@ -46,6 +45,13 @@ https://github.com/Ganapati/RsaCtfTool/pull/266
 
 The tool allow you to compare the result of Power Modular Factorization / Rsa Poisoning versus other factorization methods .
 
+
+# Factorization from p-q
+
+
+![image](https://user-images.githubusercontent.com/60758685/183696769-c087195a-cfd3-465a-9ef7-3dfb51f05217.png)
+
+![image](https://user-images.githubusercontent.com/60758685/183696846-598ffa20-07ba-4f2e-a8ab-a9307ddf6721.png)
 
 # SIMPLE ALGORITHM FOR N BITS (Haskell)
 
