@@ -28,7 +28,7 @@ If n is product of 2 primes :
 
 ## sigma(n)^2 = 4n + x^2
 
-## n^2-1 = x6 + y6 + (x^6 * y6) 
+## n^2-1 = x6 + y6 + (x6 * y6) 
 
 
 
