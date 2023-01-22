@@ -26,7 +26,7 @@ If n is product of 2 primes :
 
 ## FACTOR N = gcd N $ (powMod 2 (ex * modular_inverse ex (p-q || p+q multiples ) - 1) n) - 1
 
-## sigma(n)^2 = 4n + x^2
+## sigma(n)^2 = 4n + (P - Q)^2
 
 ## n^2-1 = x6 + y6 + (x6 * y6) 
 
