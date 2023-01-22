@@ -35,11 +35,6 @@ If n is product of 2 primes :
 ## 1 = ((sqrt (x * 6+1) * (sqrt (y * 6+1)))^2) - ( (x * 6+y * 6) + ((x * 6)*(y * 6)))
 ## 1 =  ((p * q)^2) - ( (p^2-1+q^2-1) + ((q^2-1) * (p^2-1)))
 
-# Factorization from (n^2-1 / 6)
-
-![image](https://user-images.githubusercontent.com/60758685/200155828-2d994399-c8f9-4999-b6ab-ac703f6ec750.png)
-
-
 
 # Implementation in RsaCTFTool
 
